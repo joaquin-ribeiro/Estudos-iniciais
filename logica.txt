@@ -67,4 +67,4 @@ Fim do sistema
 Laço de repetição ou mais simplificadamente (enqaunto) permite um loop que vai repetir uma determinada ação até que uma condição previamente estipulada seja atendida
 
 
-Resumindo de fo0rma chula podemos dizer que a logica de programação é apenas a habilidade de transformar uma ida ao mercado em varias pequenas ações (passos) que levariam um usuario do ponto a ao ponto b 
+Resumindo de forma chula podemos dizer que a logica de programação é apenas a habilidade de transformar uma ida ao mercado em varias pequenas ações (passos) que levariam um usuario do ponto a ao ponto b 
