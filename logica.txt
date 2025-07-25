@@ -1,0 +1,70 @@
+LOGICA DE PROGRAMAÇÃO 
+
+Programador é apenas um nome chique pra solucionador de problemas e a base pra isso é a lógica de programação.
+Todo software possui um objetivo final e isso é estabelecido muito antes de se colocar a mão no código
+
+EX: Um sistema que pede a idade de um usuario e a imprime a idade dele em 10 anos
+
+inicio do sistema
+    idade  = input("Qual sua idade?")
+    idadeFinal = idade  + 10
+    print('sua idade em 10 anos será' + idadeFinal)
+fim do sistema
+
+
+Com isso entramos com o basico:
+
+Qual o objetivo do sistema?
+Quais os dados que serão recebidos?
+Quais processos/operações serão feitas?
+Quais dados vão retornar ao usuario?
+
+---------------------------------------------------------
+
+Qual o objetivo do sistema?
+    Imprimir a idade do usuario em 10 anos
+
+Quais os dados que serão recebidos?
+    idade do usuario
+
+Quais processos/operações serão feitas?
+    guardar a idade do usuario e somar com 10
+
+Quais dados vão retornar ao usuario?
+    resultado da adição, a idade em 10 anos
+
+
+Depois que entendemos isso podemos aprofundar mais um pouco com questões como repetições e descições
+
+Inicio do sistema 
+    idade  = input("Qual sua idade?")
+    Se idade >= a 18 return print("você é de maior")
+    Se idade <= a 18 return print("você é de menor")
+    Senao print("idade invalida")
+Fim do sistema
+
+Aqui temos um exemplo de descições (if/else) ou (se/senao), tal funcionadade pode ser comparada com uma bifurcação se determinada condição é cumprida tal coisa acontece, senão outra coisa vai rodar
+Nesse caso podemos utulizar inumeras "bifurcações" pra chegarmos a um resultado ainda mais especifico.
+
+Inicio do sistema
+    num = 0
+    se num diferente de 100, num + 1
+    num = 1 
+    se num diferente de 100, num + 1
+    num = 2
+    se num diferente de 100, num + 1
+    num = 3 
+Fim do sistema
+
+Num caso como esse o uso de se/senao vai fazer a gente chegar no resultado, mas laços de repetições serão 100x mais recomendados, diminuindo o retrabalho e eliminando futuros erros 
+
+Inicio do sistema
+    num = 0
+    enquanto num diferente de 100, num + 1
+    num = 1 
+Fim do sistema
+
+Laço de repetição ou mais simplificadamente (enqaunto) permite um loop que vai repetir uma determinada ação até que uma condição previamente estipulada seja atendida
+
+
+Resumindo de fo0rma chula podemos dizer que a logica de programação é apenas a habilidade de transformar uma ida ao mercado em varias pequenas ações (passos) que levariam um usuario do ponto a ao ponto b 
