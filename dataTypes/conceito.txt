@@ -1,0 +1,28 @@
+Em programação temos um total de 7 tipos de dados primitivos sendo eles:
+
+1. String
+    Representa textos, basicamente uma sequencia de caracteres
+    Ex: nomes, numeros (por mais que ele tenha um tipo proprio number, numeros podem tambem serem declarados como string)
+    OBS: string não podem ser somadas matematicamente enquanto 1+1=2, '1' + '1' = '11'
+
+2. NUmber 
+    Representa numeros, sejam eles inteiros decimai positivos ou negativos 
+    Ex: idade, numero de telefone, altura, cm ,etc.
+    OBS: podem ser usados em calculos matematicos com operadores aritimeticos: 4*4=16
+
+3. Bollean
+    Bollean é o tipo mais simples de dado, represente verdadeiro (TRUE) ou falso (FALSE)
+    Ex: se uma pessoa se cadastrou e depois tentou logar, se a conta existe então retorna true e permite o login, se não existe retorna false e não permite o login
+    OBS: É mais usado com condicionais como if/else ou while
+
+4. Undefined
+    Undefined é algo que ainda não foi definida, porém vai receber um determinado valor futuramente 
+    Ex: Idade = undefined, não é definida pois não sabemos a idade se perguntarmos ao usuario e em seguida salvarmos teremos o valor da idade dele e consequentemente o valor da variavek idade
+    OBS: Por mais que se pareça com o null, os dois tipos são diferentes e não devem ser confundidos 
+
+5. Null 
+    O null ao contraio do undefined, é algo definido pois é descididpo que seu valor será inexistente logo null (não existe)
+    Ex: Uma pessoal solteira num formulario que pediria o nome do seu conjuge o deixario vazio, pro sistema o tal nome receberia o tipo null
+    OBS: O sistema não espera mais nada pq ele já tem sua resposta a variavel não está indefinida ela apenas não tem valor 
+
+6. Symbol
