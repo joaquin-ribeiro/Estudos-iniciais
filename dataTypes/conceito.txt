@@ -26,3 +26,12 @@ Em programação temos um total de 7 tipos de dados primitivos sendo eles:
     OBS: O sistema não espera mais nada pq ele já tem sua resposta a variavel não está indefinida ela apenas não tem valor 
 
 6. Symbol
+    Valor unico e imutavel, usado principalmente como identificador de propriedades de objetos
+    Ex: const id = Symbol("id")
+    Entendi nada disso aqui não
+
+7. Bigint
+    Permite trabalhar com numeros inteiros grandes, pois o tipo number possui um limite de caracteres suportado
+    Ex: "213215448484556585455545454848845498788494987545655n"   (o 'n' no final da variavel declara ela como bigint)
+    OBS: é igual ao number porem possuim mais caracteres (diferença como se fosse letra para frase), bigint n pode ser usado com number pois dá erro. NUmber + number, bigint + bigint
+    OBS2: Não da pra fazer o uso de virgulas, apenas numeros inteiros no bigint
