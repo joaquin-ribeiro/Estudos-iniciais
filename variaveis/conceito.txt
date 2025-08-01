@@ -1,0 +1,21 @@
+Atualmente podemos declarar variaveis de 3 manieras diferentes, sendo elas:
+
+
+Var
+    Foi utilizada por muito tempo como a unica maneira de declarar variaveis no js, hj em dia já não é mais usada por ter se tornado obsoleta em relação as novas formas;
+    Possui caracteristicas de escopo global, podendo ser chamada de qualquer lugar do codigo, por isso seu nome tem que ser unico pra não gerar conflitos;
+    OBS: Seu valor pode ser alterado a qualquer momento e sofre hosting.
+
+    Ex: var idade = 22 
+
+Let 
+    A nova forma padrão para se declarar variaveis mutaveis no js desde 2015, possui o escopo de bloco (seu nome seu valor se limitar a um bloco de codigo, portanto pode se existir diversos lets com o mesmo nome de variavel desde que estejam em blocos diferentes)
+    OBS: Sobre hosting porem apenas na zona morta, pode ser reatribuida (let idade = 22 // idade = 23, mas n redeclarada let idade = 23)
+
+    Ex: let idade = 22
+
+Const
+    É praticamente um let com uma restrição a mais, uma const não pode ter seu valor redefinido ou redeclarado, se ela começa o codigo com valor x, termina com o mesmo valor x, até o final dele.
+    OBS: sofre hosting apenas em zona morta, possui escopo de bloco, sendo limitado por codigo de ambos os lados {}
+
+    Ex: const idade = 22
