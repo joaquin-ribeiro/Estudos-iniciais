@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXEMPLO</title>
+</head> 
+<body>
+
+    <H1>EXEMPLOS DE OBJETOS</H1>
+    
+</body>
+
+    <script>
+        //criando obj 
+        const pessoa = {
+            nome: 'Joaquin',
+            idade:789,
+            logradouro: 'rua',
+            numeros: [1, 2, 22, 3], //criando array dentro de um obj
+            falar: function(){
+                console.log('hello world')
+            },
+            'cidade': 'metropolis',
+        }
+
+        console.log(pessoa)
+        console.log(pessoa.nome)
+        console.log(pessoa.numeros)
+        console.log(pessoa.numeros[2]) // puxando valor da 2 posição de dentro do array 
+        pessoa.falar()  // aqui ja puxa a função 
+        console.log(pessoa['cidade']) //melhor uso
+        console.log(pessoa.cidade) // n recomendado 
+        //console.log(pessoa.'cidade' )   // erro
+        
+     
+
+    </script>
+</html>

@@ -1,0 +1,30 @@
+OBJETOS
+
+    Objeto é uma estrutura que agrupa pares e valores, podemos pensar nele como um grande armario cheio de gavetas e em cada gaveta uma peça de roupa diferente, e cada gaveta possui uma cor usada pra ficar mais facil a organização
+    Normalmente criamos um objeto atraves do const, pois ele não permite que reatribuir objeto, mas sim que moodifique seu valor posteriormente.
+    EX: 
+    const pessoa = {
+        nome: 'sdfnsfkdln',
+        idade: 852,
+        saudacao: function() {
+            return 'ola';
+        }
+
+    }
+
+    nesse caso nome e idade sao propriedades enquanto que a função é um metodo .
+
+    Para chamar um dado especifico usamos o nome do objeto mais a propriedades (DOT DONATION)
+    pessoa.nome 
+    pessoa.idade
+
+    Mas tbm podemos usar:  (BRACKET NOTATION)
+    pessoa['nome']
+    pessoa['idade']
+
+    Aqui passamos o nome da propriedade como string, usado quando a propriedade, for declarada com espaços ou começando com numeros (quando n seguir as regras de variaveis comuns)
+    Ou tbm quando o nome da propriedade que vc quer pegar é volatil pode mudar dentro do codigo, na outra forma é fixa com o Bracket notation pode ser variavel
+    Essa forma normalmente só vai ser usada quando a propriedade for criada dinamicamente como via API, pois dessa forma normalmentes só se usa Bracket notationw
+
+OBSERVAÇÕES
+    Objetos podem conter outros objetos, arrays, tipos primitivos e funções
