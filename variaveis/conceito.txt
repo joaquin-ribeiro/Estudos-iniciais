@@ -19,3 +19,56 @@ Const
     OBS: sofre hosting apenas em zona morta, possui escopo de bloco, sendo limitado por codigo de ambos os lados {}
 
     Ex: const idade = 22
+
+
+HOISTING
+
+    O conceito de hoisting é em suma 'içar' determinados itens antes do começo do codigo, variaveis são puxadas junto com as funções
+    EX: console.log(a)
+        var a = 'bom dia'
+        Aqui o console vai retornar o valor de a como undefined, pois ele lê essa linha de codigo como
+        var a (o js cria a variavel que vai ser usada mas n determina um valor pra ele deixanmdo do tipo undefined)
+        console.log(a) // undefined
+        var a = 'bom dia'
+
+        Com o var acontece de retornar o valor de undefined já com o let e o const as variaveis são içadas mas entram em zona morta portanto dá erro de referenceError no console.
+
+    Porém com funções não ocorre a mesma coisa, já que elas são puxadas inteiras antes de onde estão sendo chamadas.
+
+    Ex: fala()
+        function fala(){
+            console.log('oi')
+        }    
+        Mesmo chamando a função antes de declarar ela, ainda vai dar certo pois aqui ela iça a função antes de rodar o codigo.
+
+
+REGRAS DE NOMENCLATURA
+
+    No js temos algumas regras ao declararmos variaveis sendo elas:
+    Uma variavel pode começar com letra, $ ou _
+    let idade  = 22
+    let $idade = 22
+    let _idade = 22
+    
+    pode conter numeros mas n pode começar com eles
+    let idade2 = 23 OK
+    let 2idade = 23 NOT OK
+    
+    pode usar letras maiusculas
+    let idade = 22   || let Idade = 22
+    2 variaveis diferentes pelo maisculo na frente (case sensitive)
+
+    Não se pode usar espaços
+    let dia de hoje = yy/yy/yyyy  NOT OK
+    let diadehoje = yy/yy/yyyy 
+    nesse caso seria melhor usar diadehoje
+
+    Não pode usar palavras reservadas para a linguagem como
+
+    let let = 22
+    let if = 32 
+
+    A melhor maneira de chamar uma variavel seria 
+    começar com minuscula e se existir uma segunda palavra usar maiuscula
+    let minhaIdade = 89
+    let mesAtual = 8

@@ -1,0 +1,30 @@
+ESCOPOS DE VARIAVEIS 
+
+1. GLOBAL 
+
+    É o escopo padrão, uma variavel declarada aqui pode ser chamada em qualquer parte do codigo
+    ex: let idade = 78
+        function fale(){
+            idade = 56
+            console.log(idade)
+        }
+
+        fale() // retorna 56
+    ela pode ser chamada e reatribuida mas não redeclarada, é como se um codigo fosse uma mesa, todas as funções e afins são pastas com determinados arquivos da mesma forma que teriam porta lapis com outros tipos de arquivos e itens soltos sobre a mesa.
+    O que está solto pode ser usado por toda a mesa, independente de pasta ou não, o que está na pasta só pode ser usado na pasta e o que está no porta lapis pode ser usado na pasta mas n pode ser usado fora dela.
+
+2. FUNÇÃO
+    Variaveris declaradas dentro uma função só existem dentro dela e não podem ser chamadas por ooutras funções ou pelo escopo global.
+    function idade(){
+        let idade = 45
+        console.log(idade)  // 45
+    }
+
+    console.log(idade) // referenceError
+
+    função sempre vai lembrar do lugar onde nasceu se eu criar uma function dentro de uma function a filha tem acesso a todas as variaveis da função pai, porem um pai n te acesso aos valores da função filha, e o mesmo ocorre com funções irmãs que n tem acesso uma a outra
+
+3. BLOCO
+    Criado por qualquer bloco de codigo fechado por {} como if, while, for, switch etc.
+    O var escapa do escopo de bloco e para o superior, entretanto o let e o const funcionam perfeitamente
+    Nesse caso o var só respeita function de resto ele vai vazando pro pai mais proximo até chegar no global    
